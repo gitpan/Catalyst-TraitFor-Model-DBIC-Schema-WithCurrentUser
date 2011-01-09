@@ -25,4 +25,4 @@ requires:
   Moose::Role: 0
 resources:
   repository: git://github.com/amiri/Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser.git
-version: 0.01
+version: 0.02

@@ -190,6 +190,10 @@ That's about it!
 
 Amiri Barksdale E<lt>amiri@arisdottle.netE<gt>
 
+=head1 CONTRIBUTORS
+
+Matt S. Trout (mst) E<lt>mst@shadowcat.co.ukE<gt>
+
 =head1 SEE ALSO
 
 L<DBIx::Class::Schema::RestrictWithObject>, L<DBIx::Class>, L<Catalyst::Model::DBIC::Schema>

@@ -159,6 +159,9 @@ DESCRIPTION
 AUTHOR
     Amiri Barksdale <amiri@arisdottle.net>
 
+CONTRIBUTORS
+    Matt S. Trout (mst) <mst@shadowcat.co.uk>
+
 SEE ALSO
     DBIx::Class::Schema::RestrictWithObject, DBIx::Class,
     Catalyst::Model::DBIC::Schema
