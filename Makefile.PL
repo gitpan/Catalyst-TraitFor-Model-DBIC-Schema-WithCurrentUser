@@ -4,7 +4,7 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -18,11 +18,10 @@ my %WriteMakefileArgs = (
     'Moose' => '0',
     'Scalar::Util' => '0',
     'Test::Exception' => '0',
-    'Test::More' => '0',
-    'namespace::autoclean' => '0'
+    'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser',
   'EXE_FILES' => [],
@@ -30,9 +29,10 @@ my %WriteMakefileArgs = (
   'NAME' => 'Catalyst::TraitFor::Model::DBIC::Schema::WithCurrentUser',
   'PREREQ_PM' => {
     'Catalyst::Component::InstancePerContext' => '0',
-    'Moose::Role' => '0'
+    'Moose::Role' => '0',
+    'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }

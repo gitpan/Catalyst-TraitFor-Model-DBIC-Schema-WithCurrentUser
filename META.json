@@ -4,7 +4,7 @@
       "Amiri Barksdale <amiri@arisdottle.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200000, CPAN::Meta::Converter version 2.102400",
+   "generated_by" : "Dist::Zilla version 4.200015, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "perl_5"
    ],
@@ -16,13 +16,14 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
          }
       },
       "runtime" : {
          "requires" : {
             "Catalyst::Component::InstancePerContext" : 0,
-            "Moose::Role" : 0
+            "Moose::Role" : 0,
+            "namespace::autoclean" : 0
          }
       },
       "test" : {
@@ -33,19 +34,21 @@
             "Moose" : 0,
             "Scalar::Util" : 0,
             "Test::Exception" : 0,
-            "Test::More" : 0,
-            "namespace::autoclean" : 0
+            "Test::More" : 0
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/amiri/Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser/issues"
+      },
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/amiri/Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser.git",
          "web" : "http://github.com/amiri/Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

@@ -1,0 +1,5 @@
+Revison history for Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser
+
+0.03      2011-08-13
+	- Use traits config, remove ACCEPT_CONTEXT method
+
