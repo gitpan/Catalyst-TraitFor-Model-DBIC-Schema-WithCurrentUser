@@ -7,13 +7,11 @@ SYNOPSIS
         use Moose;
         extends qw/Catalyst::Model::DBIC::Schema/;
 
-        __PACKAGE__->config(
-            {
-                traits => ['WithCurrentUser'], # The important bit!
-                schema_class => 'MyApp::Schema',
-                connect_info => { dsn => 'dbi:SQLite:dbname=:memory:' },
-            }
-        );
+        __PACKAGE__->config({
+                traits          =>['WithCurrentUser'], # The important bit!
+                schema_class    => 'MyApp::Schema',
+                connect_info    => { dsn => 'dbi:SQLite:dbname=:memory:' },
+        });
 
         1;
 

@@ -9,32 +9,34 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Puts the context\'s current user into your Catalyst::Model::DBIC::Schema schema.',
-  'AUTHOR' => 'Amiri Barksdale <amiri@arisdottle.net>',
-  'BUILD_REQUIRES' => {
-    'Catalyst::Component' => '0',
-    'Catalyst::Model::DBIC::Schema' => '0',
-    'DBIx::Class::Schema' => '0',
-    'Moose' => '0',
-    'Scalar::Util' => '0',
-    'Test::Exception' => '0',
-    'Test::More' => '0'
+  "ABSTRACT" => "Puts the context's current user into your Catalyst::Model::DBIC::Schema schema.",
+  "AUTHOR" => "Amiri Barksdale <amiri\@arisdottle.net>",
+  "BUILD_REQUIRES" => {
+    "Catalyst::Component" => 0,
+    "DBIx::Class::Schema" => 0,
+    "Moose" => 0,
+    "Scalar::Util" => 0,
+    "Test::Exception" => 0,
+    "Test::More" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Catalyst::TraitFor::Model::DBIC::Schema::WithCurrentUser',
-  'PREREQ_PM' => {
-    'Catalyst::Component::InstancePerContext' => '0',
-    'Moose::Role' => '0',
-    'namespace::autoclean' => '0'
+  "DISTNAME" => "Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Catalyst::TraitFor::Model::DBIC::Schema::WithCurrentUser",
+  "PREREQ_PM" => {
+    "Catalyst::Model::DBIC::Schema" => "0.58",
+    "Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema" => 0,
+    "Moose::Role" => 0,
+    "namespace::autoclean" => 0
   },
-  'VERSION' => '0.03',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.04",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
