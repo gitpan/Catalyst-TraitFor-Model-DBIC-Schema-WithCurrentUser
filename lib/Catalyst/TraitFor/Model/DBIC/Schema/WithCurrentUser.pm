@@ -1,12 +1,15 @@
 package Catalyst::TraitFor::Model::DBIC::Schema::WithCurrentUser;
+
 use Moose::Role;
 use namespace::autoclean;
-use Catalyst::Model::DBIC::Schema 0.58 ();
+use Catalyst::Model::DBIC::Schema 0.60 ();
 
-with 'Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema';
+with 'Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema' => {
+    -excludes => [ 'per_request_schema_attributes', ],
+};
 
 BEGIN {
-    our $VERSION = '0.04'; # VERSION
+    our $VERSION = '0.05'; # VERSION
 }
 
 # ABSTRACT: Puts the context's current user into your Catalyst::Model::DBIC::Schema schema.
@@ -181,7 +184,7 @@ That's about it!
 
 =head1 AUTHOR
 
-Amiri Barksdale E<lt>amiri@arisdottle.netE<gt>
+Amiri Barksdale E<lt>amiri@roosterpirates.comE<gt>
 
 =head1 CONTRIBUTORS
 

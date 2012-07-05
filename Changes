@@ -1,5 +1,13 @@
 Revison history for Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser
 
+0.05      2012-07-04
+
+0.05      2012-07-04
+    - Exclude unwanted stub method from
+      upstream trait, fixing http://www.cpantesters.org/
+      cpan/report/ba317e7e-c33e-11e1-9a67-236808f5d1fc.
+      (Amiri Barksdale)
+
 0.04      2011-10-26
     - Use upstream trait to grab current
       user instead of pulling it out and

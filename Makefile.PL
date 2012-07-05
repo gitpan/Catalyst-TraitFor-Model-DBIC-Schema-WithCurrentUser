@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Puts the context's current user into your Catalyst::Model::DBIC::Schema schema.",
-  "AUTHOR" => "Amiri Barksdale <amiri\@arisdottle.net>",
+  "AUTHOR" => "Amiri Barksdale <amiri\@roosterpirates.com>",
   "BUILD_REQUIRES" => {
     "Catalyst::Component" => 0,
     "DBIx::Class::Schema" => 0,
@@ -29,12 +29,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Catalyst::TraitFor::Model::DBIC::Schema::WithCurrentUser",
   "PREREQ_PM" => {
-    "Catalyst::Model::DBIC::Schema" => "0.58",
+    "Catalyst::Model::DBIC::Schema" => "0.60",
     "Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema" => 0,
     "Moose::Role" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
