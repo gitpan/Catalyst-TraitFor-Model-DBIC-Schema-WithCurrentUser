@@ -32,9 +32,10 @@ my %WriteMakefileArgs = (
     "Catalyst::Model::DBIC::Schema" => "0.60",
     "Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema" => 0,
     "Moose::Role" => 0,
+    "MooseX::MarkAsMethods" => "0.15",
     "namespace::autoclean" => 0
   },
-  "VERSION" => "0.05",
+  "VERSION" => "0.06",
   "test" => {
     "TESTS" => "t/*.t"
   }

@@ -9,7 +9,7 @@ with 'Catalyst::TraitFor::Model::DBIC::Schema::PerRequestSchema' => {
 };
 
 BEGIN {
-    our $VERSION = '0.05'; # VERSION
+    our $VERSION = '0.06'; # VERSION
 }
 
 # ABSTRACT: Puts the context's current user into your Catalyst::Model::DBIC::Schema schema.
