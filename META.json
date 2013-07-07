@@ -4,7 +4,7 @@
       "Amiri Barksdale <amiri@roosterpirates.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -36,6 +36,7 @@
             "Scalar::Util" : "0",
             "Test::Exception" : "0",
             "Test::More" : "0",
+            "lib" : "0",
             "strict" : "0",
             "warnings" : "0"
          }
@@ -52,6 +53,6 @@
          "web" : "http://github.com/amiri/Catalyst-TraitFor-Model-DBIC-Schema-WithCurrentUser"
       }
    },
-   "version" : "0.06"
+   "version" : "0.07"
 }
 
